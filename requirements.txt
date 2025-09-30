@@ -1,0 +1,24 @@
+# ===============================
+# Agent X - Python Dependencies
+# Groq LLM version, no database
+# Created by: Arman Momin
+# Level: Fresher / Beginner
+# ===============================
+
+# Web / UI
+streamlit==1.27.0
+flask==2.3.4
+
+# Groq LLM SDK
+groqai==0.1.0          
+
+# Data processing
+pandas==2.1.1
+numpy==1.27.0
+
+# Testing / Debugging
+pytest==8.4.3
+
+# Optional utilities
+python-dotenv==1.0.1    
+tqdm==4.66.1             

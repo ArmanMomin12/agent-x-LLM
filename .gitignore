@@ -1,0 +1,76 @@
+# ===============================
+#   AutoGPT Project - .gitignore
+#   Author: Arman Momin
+#   Fresher Level Setup
+# ===============================
+
+# -------- Python --------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+*.log
+
+# Virtual env
+venv/
+.venv/
+env/
+.env
+.env.*
+
+# Build / Dist
+dist/
+build/
+*.egg-info/
+
+# -------- Node / Frontend --------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnp.*
+dist/
+build/
+
+# -------- IDE / Editor --------
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+.DS_Store
+Thumbs.db
+
+# -------- Generated / Cache --------
+cache/
+*.cache
+generated/
+models/
+checkpoints/
+
+# -------- Docker --------
+*.log
+docker-compose.override.yml
+docker/*.log
+
+# -------- Testing --------
+.pytest_cache/
+.tox/
+.coverage
+coverage/
+htmlcov/
+
+# -------- Jupyter --------
+.ipynb_checkpoints/
+*.ipynb
+
+# -------- Secrets --------
+*.pem
+*.crt
+*.key
+*.env.local
+secrets.json
+credentials/

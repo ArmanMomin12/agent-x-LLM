@@ -1,0 +1,42 @@
+# ===============================
+#   AutoGPT Project - pyproject.toml
+#   Created by: Arman Momin
+#   Level: Fresher (Beginner)
+#   Note: This file is for managing
+#   dependencies and project metadata.
+# ===============================
+
+[build-system]
+# Using setuptools for building
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autogpt-fresher"
+version = "0.1.0"
+description = "A beginner-friendly AutoGPT project created by Arman Momin"
+authors = [
+    { name = "Arman Momin", email = "your-email@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+# List of dependencies (basic only, add more if your project needs them)
+dependencies = [
+    "requests",
+    "openai",
+    "streamlit",
+    "flask",
+    "psycopg2-binary",  # if using PostgreSQL
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
