@@ -1,44 +1,59 @@
-Agent-X 🤖🚀
+# 🚀 Agent X 🤖🛠️
+**AI Software Engineer Assistant** – Created by **Arman Momin**  
+*Fresher / Beginner Level Project*
 
-A beginner-friendly AutoGPT-style AI agent project.
-This system demonstrates AI agent capabilities, automates tasks, and provides a structured backend with optional frontend integration.
+---
 
-🛠 Features
+## 🌟 Overview
+Agent X is a **multi-agent AI system** that automates software engineering tasks.  
+It uses **Groq LLM models**, a **Streamlit interface**, and multiple agents for **code generation, testing, and debugging**.  
 
-LLM Model Integration: Uses Groq-compatible language models for reasoning and code generation.
+> Designed for **learning, experimentation, and demonstration** of AI engineering pipelines.
 
-Test Agent: Automatically runs unit tests, validates code, and provides feedback.
+---
 
-Task Planner Agent: Plans multi-step coding tasks using AI reasoning.
+## ✨ Features
+- 🧠 **Groq LLM Integration** – AI reasoning & code generation  
+- ✅ **Test Agent** – Runs unit tests and validates code  
+- 📝 **Task Planner Agent** – Plans multi-step tasks intelligently  
+- 🐞 **Self-Debugger Agent** – Fixes bugs automatically  
+- 💻 **Streamlit UI** – Interactive interface for agents & outputs  
+- 📊 **Activity Tracking** – Logs agent actions and decisions  
+- 🐳 **Docker Support** – Easy containerized deployment  
+- 🔧 **Extensible Architecture** – Add new agents or features easily  
 
-Self-Debugger Agent: Detects and fixes bugs in generated code.
+---
 
-Streamlit UI: Interactive interface for running agents, viewing logs, and generating outputs.
+## ⚡ Tech Stack
+| Layer | Tools / Libraries |
+|-------|-----------------|
+| Backend | Python 3.10, Flask |
+| Frontend / UI | Streamlit |
+| AI | Groq-compatible LLM |
+| Testing | Pytest |
+| Utilities | Python-dotenv, tqdm |
+| Deployment | Docker |
 
-Activity Tracking: Monitors agent actions, decisions, and outputs in real-time.
+---
 
-Docker Support: Run the system inside a container for portability.
+## 🛠 Installation & Setup
 
-Extensible Architecture: Add new agents or features easily.
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/ArmanMomin12/agent-x-LLM.git
+cd agent-x-LLM
+2️⃣ Create virtual environment
 
-🛠 Tech Stack
+    python -m venv venv
+    # Activate venv:
+    source venv/bin/activate      # Linux / Mac
+    venv\Scripts\activate         # Windows
+3️⃣  Run the Streamlit UI
+    streamlit run src/interface/streamlit_ui.py
 
-Backend: Python 3.10, Flask
+📁 Project Structure
 
-Frontend/UI: Streamlit
-
-LLM Integration: Groq-compatible models
-
-Database: PostgreSQL (optional, for activity logs)
-
-Testing: Pytest / Unit tests
-
-Docker: Containerized deployment
-
-Data & Visualization: CSV, logs, JSON outputs
-
-Project Structure
-Agent-X/
+  Agent-X/
 ├── Dockerfile
 ├── pyproject.toml
 ├── requirements.txt
@@ -48,18 +63,13 @@ Agent-X/
 ├── .gitignore
 ├── .env.example
 ├── src/
-│   ├── agents/           # Planner, Test, Self-Debugger, Task agents
-│   ├── interface/        # Streamlit UI files
-│   ├── utils/            # Helper functions, logging
-│   └── models/           # Model configs, tokenizers, LLM wrappers
-├── logs/                 # Activity and agent logs
-└── generated/            # Generated code outputs
+│   ├── agents/
+│   ├── interface/
+│   ├── utils/
+│   └── models/
+├── logs/
+└── generated/
 
 
-Run the Streamlit UI
-streamlit run src/interface/streamlit_ui.py
 
 
-(Optional) Run with Docker
-docker build -t agent-x .
-docker run -p 8501:8501 agent-x
